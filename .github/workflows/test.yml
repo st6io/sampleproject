@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         python: ['3.12']
-        platform: [flyci-macos-14-large-m2]
+        platform: [flyci-macos-14-m2]
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Checkout
