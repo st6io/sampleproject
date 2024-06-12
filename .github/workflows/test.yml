@@ -7,10 +7,10 @@ on:  workflow_dispatch
 
 jobs:
   test:
-    # strategy:
-    #   matrix:
-    #     python: ['3.12']
-    #     platform: [flyci-macos-14-m2]
+    strategy:
+      matrix:
+        python: ['3.12', '3.13']
+        platform: [flyci-macos-14-m2]
     runs-on: flyci-macos-14-m2
     steps:
       - name: Checkout
